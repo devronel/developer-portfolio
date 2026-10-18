@@ -69,7 +69,7 @@ export interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
   name: "Ronel Florida",
-  url: "https://ronelflorida.dev",
+  url: "https://ronelflorida-code.vercel.app/",
   description: "Software Developer specializing in backend systems, application logic, and database management. Skilled in Laravel, Java, Spring Boot, and REST APIs.",
   sourceUrl: "https://github.com/devronel/developer-portfolio",
   copyrightYear: 2026,
@@ -183,7 +183,7 @@ export const projects: Project[] = [
         id: 2,
         label: "Live",
         type: "live",
-        source: "https://github.com/devronel/developer-portfolio",
+        source: "https://ronelflorida-code.vercel.app/",
       }
     ]
   },
