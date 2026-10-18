@@ -2,12 +2,6 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-/* Docs contain example class names — scan source, not prose. */
-/* Keep Tailwind's scanner out of agent/tooling docs that contain
-   example class strings (e.g. `bg-[radial-gradient(...)]`). These are
-   relative to this file (app/globals.css), so `..` is the project root. */
-@source not "../.opencode";
-@source not "../AGENTS.md";
 
 @custom-variant dark (&:is(.dark *));
 
