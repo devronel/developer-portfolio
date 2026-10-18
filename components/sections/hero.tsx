@@ -72,7 +72,7 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={80}>
-          <WindowFrame title={`${profile.handle}@portfolio — zsh`} meta="bash">
+          <WindowFrame title={`${profile.handle}@code — zsh`} meta="bash">
             <div className="space-y-3 font-mono text-xs leading-relaxed">
               <p className="text-muted-foreground">
                 <span className="text-primary">$</span> whoami

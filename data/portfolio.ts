@@ -78,7 +78,7 @@ export const siteConfig: SiteConfig = {
 
 export const profile: Profile = {
   name: "Ronel Florida",
-  handle: "ronel",
+  handle: "ronel florida",
   role: "Software Developer",
   location: "Occidental Mindoro, Philippines",
   availability: { open: true, label: "Open to new opportunities" },

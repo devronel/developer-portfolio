@@ -38,7 +38,7 @@ export function MobileNav() {
       <SheetContent side="right" showCloseButton={false}>
         <SheetHeader>
           <SheetTitle className="font-mono text-xs text-muted-foreground">
-            {profile.handle}@portfolio
+            {profile.handle}@code
           </SheetTitle>
           <SheetDescription className="sr-only">
             Jump to a section of the page.
