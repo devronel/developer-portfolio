@@ -102,7 +102,6 @@ export function About() {
 
           <Reveal delay={80}>
             <WindowFrame title="dev.ts" meta="TypeScript">
-              {/* Decorative: the sr-only block below carries the same facts. */}
               <pre aria-hidden="true" className="overflow-x-auto font-mono text-[11px] leading-relaxed sm:text-xs">
                 <code>
                   <span className="text-primary">const</span> dev = {"{"}

@@ -58,7 +58,7 @@ export function Hero() {
             {hasResume && (
               <ButtonLink
                 href={profile.resumeUrl}
-                download
+                target="_blank"
                 variant="outline"
                 size="lg"
               >

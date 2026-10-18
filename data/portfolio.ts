@@ -75,7 +75,7 @@ export const siteConfig: SiteConfig = {
   url: "https://ronelflorida.dev",
   description:
     "Full-stack engineer building fast, accessible web products with TypeScript, Next.js, and Node.js.",
-  sourceUrl: "https://github.com/ronelflorida/ronelflorida-dev",
+  sourceUrl: "https://github.com/devronel/developer-portfolio",
   copyrightYear: 2026,
 };
 
@@ -89,7 +89,7 @@ export const profile: Profile = {
   tagline: "Software developer building backend systems, handling application logic, and working with databases.",
   stack: ["Laravel", "JavaScript", "NextJS", "MySql", "Livewire", "TailwindCSS"],
   email: "rnl.florida@gmail.com",
-  resumeUrl: "#",
+  resumeUrl: "/resume/Ronel_Florida_Resume.pdf",
   bio: [
     "I'm a software developer with experience building and maintaining web applications, mainly using Laravel. I've worked on features, fixed bugs, improved existing functionality, and helped make applications more reliable and easier to use.",
     "I enjoy solving problems, learning new things, and finding ways to improve my code. I also work on personal projects to explore new technologies and put what I learn into practice.",
@@ -141,7 +141,7 @@ export const skillGroups: SkillGroup[] = [
     items: ["Laravel", "Livewire", "REST APIs", "MySQL", "SpringBoot"],
   },
   {
-    category: "Tooling & Ops",
+    category: "Tooling",
     items: ["Git", "Github", "Figma", "Postman"],
   },
 ];
@@ -151,7 +151,7 @@ export const projects: Project[] = [
   {
     slug: "kartify-ecommerce-application",
     title: "Kartify",
-    summary: "An e-commerce frontend for browsing products, managing shopping carts, and interacting with the backend API.",
+    summary: "An e-commerce application featuring product browsing, shopping cart management, and order processing.",
     tags: ["Java", "SpringBoot", "MySQL", "Rest API", "Next.js", "TailwindCSS", "shadcn/ui"],
     year: "2026",
     featured: true,
@@ -179,7 +179,7 @@ export const projects: Project[] = [
       {
         id: 1,
         label: "Code",
-        source: "#",
+        source: "https://github.com/devronel/developer-portfolio",
       }
     ],
     live: "#",
