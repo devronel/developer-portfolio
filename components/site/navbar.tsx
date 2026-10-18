@@ -14,7 +14,7 @@ export function Navbar() {
           className="font-mono text-sm font-medium tracking-tight"
         >
           <span className="text-muted-foreground">~/</span>
-          ronel
+          rnl
           <span className="text-primary">@</span>
           <span className="text-muted-foreground">code</span>
         </a>

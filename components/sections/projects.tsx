@@ -25,7 +25,7 @@ export function Projects() {
           label="projects"
           title="Things I've built"
           titleId="projects-title"
-          description="What it is, why it matters, how it's built. Ask me about any of them - I'd rather talk through the trade-offs than the feature list."
+          description="Things I've built to test ideas, learn new tools, and gain hands-on experience with modern backend and frontend stacks."
         />
 
         <div className="grid gap-4 md:grid-cols-2">

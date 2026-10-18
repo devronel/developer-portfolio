@@ -22,7 +22,6 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
-        // Structured data is static and generated from local content only.
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
 

@@ -18,41 +18,30 @@ interface ProjectCardProps {
 
 function ProjectLinks({ project }: ProjectCardProps) {
 
-  if (!project.live && !project.source) return null;
-
   return (
     <div className="flex items-center gap-1">
-      {
-        project.links.map(item => {
-
-          return (
-            <ButtonLink
-              key={item.id}
-              href={item.source}
-              target="_blank"
-              rel="noreferrer"
-              variant="ghost"
-              size="xs"
-            >
-              <FolderGit2 aria-hidden="true" />
-              { item.label }
-            </ButtonLink>
-          )
-
-        })
-      }
-      {project.live ? (
+      {project.links.map((item) => (
         <ButtonLink
-          href={project.live}
+          key={item.id}
+          href={item.source}
           target="_blank"
           rel="noreferrer"
           variant="ghost"
           size="xs"
         >
-          <ExternalLink aria-hidden="true" />
-          Live
+          {item.type === "source" ? (
+            <>
+              <FolderGit2 aria-hidden="true" />
+              {item.label}
+            </>
+          ) : (
+            <>
+              <ExternalLink aria-hidden="true" />
+              Live
+            </>
+          )}
         </ButtonLink>
-      ) : null}
+      ))}
     </div>
   );
 }
@@ -120,11 +109,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </CardContent>
 
-      {project.live || project.source ? (
-        <CardFooter className="justify-end gap-2">
-          <ProjectLinks project={project} />
-        </CardFooter>
-      ) : null}
+      <CardFooter className="justify-end gap-2">
+        <ProjectLinks project={project} />
+      </CardFooter>
     </Card>
   );
 }

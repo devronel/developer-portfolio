@@ -13,15 +13,6 @@ export function Footer() {
 
         <div className="flex items-center gap-5">
           <a
-            href={siteConfig.sourceUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1.5 transition-colors hover:text-foreground"
-          >
-            source
-            <ExternalLink aria-hidden="true" className="size-3" />
-          </a>
-          <a
             href="#top"
             className="inline-flex items-center gap-1.5 transition-colors hover:text-foreground"
           >

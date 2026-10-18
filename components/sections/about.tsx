@@ -58,9 +58,9 @@ export function About() {
         <SectionHeading
           index="01"
           label="about"
-          title="Software Developer"
+          title="Passionate About Building Great Web Apps"
           titleId="about-title"
-          description="I enjoy solving problems, building useful applications, and learning new ways to become a better developer."
+          description="Curious by nature, I enjoy learning how things work, solving problems, and growing as a developer."
         />
 
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">

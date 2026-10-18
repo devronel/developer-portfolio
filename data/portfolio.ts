@@ -15,6 +15,7 @@ export interface NavItem {
 interface LinkData {
   id: number;
   label: string;
+  type: "source" | "live"
   source?: string;
 }
 
@@ -27,8 +28,6 @@ export interface Project {
   year: string;
   links: LinkData[];
   featured?: boolean;
-  live?: string;
-  source?: string;
 }
 
 export interface SkillGroup {
@@ -61,11 +60,9 @@ export interface Profile {
 
 export interface SiteConfig {
   name: string;
-  /** TODO: replace with your production domain — used for canonical/OG URLs. */
-  url: string;
+  url: string; // Replace with your production domain — used for canonical/OG URLs.
   description: string;
-  /** TODO: replace with your repo URL, shown in the footer. */
-  sourceUrl: string;
+  sourceUrl: string; // Repo URL, shown in the footer.
   copyrightYear: number;
 }
 
@@ -73,8 +70,7 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   name: "Ronel Florida",
   url: "https://ronelflorida.dev",
-  description:
-    "Full-stack engineer building fast, accessible web products with TypeScript, Next.js, and Node.js.",
+  description: "Software Developer specializing in backend systems, application logic, and database management. Skilled in Laravel, Java, Spring Boot, and REST APIs.",
   sourceUrl: "https://github.com/devronel/developer-portfolio",
   copyrightYear: 2026,
 };
@@ -86,12 +82,12 @@ export const profile: Profile = {
   role: "Software Developer",
   location: "Occidental Mindoro, Philippines",
   availability: { open: true, label: "Open to new opportunities" },
-  tagline: "Software developer building backend systems, handling application logic, and working with databases.",
-  stack: ["Laravel", "JavaScript", "NextJS", "MySql", "Livewire", "TailwindCSS"],
+  tagline: "Software developer focused on building backend systems, designing application logic, and managing databases.",
+  stack: ["Laravel", "JavaScript", "Next.js", "MySql"],
   email: "rnl.florida@gmail.com",
   resumeUrl: "/resume/Ronel_Florida_Resume.pdf",
   bio: [
-    "I'm a software developer with experience building and maintaining web applications, mainly using Laravel. I've worked on features, fixed bugs, improved existing functionality, and helped make applications more reliable and easier to use.",
+    "I'm a software developer with 2+ years of experience building and maintaining web applications, mainly using Laravel. I've worked on features, fixed bugs, improved existing functionality, and helped make applications more reliable and easier to use.",
     "I enjoy solving problems, learning new things, and finding ways to improve my code. I also work on personal projects to explore new technologies and put what I learn into practice.",
     "Currently, I'm learning Java and Spring Boot to expand my backend development skills and explore different ways of building applications. I'm always looking for opportunities to grow as a developer, learn from others, and build useful software.",
   ],
@@ -124,7 +120,7 @@ export const socials: SocialLink[] = [
 export const skillGroups: SkillGroup[] = [
   {
     category: "Languages",
-    items: ["PHP", "JavaScript", "TypeScript", "Java", "SQL", "HTML", "CSS"],
+    items: ["PHP", "JavaScript", "TypeScript", "Java", "SQL", "HTML5", "CSS3"],
   },
   {
     category: "Frontend",
@@ -138,11 +134,11 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: "Backend",
-    items: ["Laravel", "Livewire", "REST APIs", "MySQL", "SpringBoot"],
+    items: ["Laravel", "Livewire", "REST API", "MySQL", "Spring Boot"],
   },
   {
     category: "Tooling",
-    items: ["Git", "Github", "Figma", "Postman"],
+    items: ["Git", "GitHub", "Figma", "Postman"],
   },
 ];
 
@@ -155,23 +151,24 @@ export const projects: Project[] = [
     tags: ["Java", "SpringBoot", "MySQL", "Rest API", "Next.js", "TailwindCSS", "shadcn/ui"],
     year: "2026",
     featured: true,
-    source: "https://github.com/devronel/kartify-api",
     links: [
       {
         id: 1,
         label: "Frontend Repository",
+        type: "source",
         source: "https://github.com/devronel/kartify",
       },
       {
         id: 2,
         label: "Backend Repository",
+        type: "source",
         source: "https://github.com/devronel/kartify-api",
       }
     ]
   },
   {
     slug: "portfolio",
-    title: "ronelflorida.dev",
+    title: "rnl@code",
     summary: "A personal portfolio showcasing my projects, development experience, and skills as a software developer.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
     year: "2026",
@@ -179,25 +176,37 @@ export const projects: Project[] = [
       {
         id: 1,
         label: "Code",
+        type: "source",
+        source: "https://github.com/devronel/developer-portfolio",
+      },
+      {
+        id: 2,
+        label: "Live",
+        type: "live",
         source: "https://github.com/devronel/developer-portfolio",
       }
-    ],
-    live: "#",
+    ]
   },
   {
     slug: "forgekit",
     title: "ForgeKit",
     summary: "Free image converter for JPG, PNG & WebP. In-memory processing, no sign-up needed.",
-    tags: ["Laravel", "Livewire", "TailwindCSS"],
-    year: "2025",
+    tags: ["Laravel", "Livewire", "Alpine.js", "TailwindCSS"],
+    year: "2026",
     links: [
       {
         id: 1,
         label: "Code",
+        type: "source",
         source: "https://github.com/devronel/forgekit",
+      },
+      {
+        id: 2,
+        label: "Live",
+        type: "live",
+        source: "https://image-forge-lfoh.onrender.com/",
       }
-    ],
-    live: "https://image-forge-lfoh.onrender.com/",
+    ]
   }
 ];
 
@@ -210,7 +219,7 @@ export const experience: ExperienceEntry[] = [
     period: "2025 — 2026",
     location: "Muntinlupa City, Philippines - Onsite",
     highlights: [
-      "Contributed to the development and ongoing maintenance of a Laravel-based real estate platform, implementing new features and enhancing existing functionality",
+      "Contributed to the development and ongoing maintenance of a real estate platform, implementing new features and enhancing existing functionality",
       "Optimized database queries and backend processes to improve application performance and reduce response times",
       "Diagnosed and resolved frontend and backend issues, improving system reliability, responsiveness, and overall user experience."
     ],
