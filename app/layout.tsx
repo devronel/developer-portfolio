@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const title = `${profile.name} — ${profile.role}`;
+const title = `${profile.name} - ${profile.role}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
