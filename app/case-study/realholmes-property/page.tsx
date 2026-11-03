@@ -690,10 +690,7 @@ export default function RealHolmesPropertyCaseStudy() {
           </div>
 
           <p className="mt-8 text-sm text-pretty text-muted-foreground sm:text-base">
-            The biggest takeaway was learning to make smaller, safer changes. I
-            became more careful about understanding the code around a bug before
-            touching it, and more aware of how backend decisions affect the rest
-            of the product.
+            Working on an existing application taught me to understand the code before making changes. I also learned to make careful improvements because changes in the backend can affect other parts of the application.
           </p>
         </Container>
       </section>
